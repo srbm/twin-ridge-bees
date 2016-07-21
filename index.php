@@ -7,7 +7,5 @@ $pageTitle = "TRB";
 include ("inc/header.php");
 ?>
 
-<a href="about.php">About</a>
-
 
 <?php include("inc/footer.php"); ?>
