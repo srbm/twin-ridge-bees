@@ -7,6 +7,13 @@ $pageTitle = "TRB";
 include ("inc/header.php");
 ?>
 
+<div class="container">
+	<div class="jumbotron">
+		<h1>Twin Ridge Bees</h1>
+		<h3>More than just honey.</h3>
+	</div>
+</div>
+
 	<!-- Search  -->
 	<div class="container">
 		<div class="search">
