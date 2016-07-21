@@ -61,14 +61,12 @@ function one_product_array($id) {
 	return $products;
 }
 
-function get_item_html($id,$item) {
-	$output = "<li><a href='details.php?id="
-		. $id . "'><img src='" 
-		. $item["img"] . "' alt='" 
-		. $item["name"] . "' />" 
-		. "<p>View Details</p>"
-		. "</a></li>";
-	return $output;
+function get_item_html($item) {
+    $output = "<li>"
+        . $item["name"] . "     "
+        . $item["price"] . "/" 
+        . $item["unit"] . "</li>";
+    return $output;
 }
 
 function get_products($product,$category) {
@@ -91,17 +89,7 @@ function search_catalog_array($search, $limit = null, $offset = 0) {
     try {
        $sql = "SELECT name, price, unit 
          FROM Products
-         WHERE name LIKE ?
-         ORDER BY 
-         REPLACE(
-           REPLACE(
-              REPLACE(name,'The ',''),
-              'An ',
-              ''
-           ),
-           'A ',
-           ''
-         )";
+         WHERE name LIKE ?";
        if (is_integer($limit)) {
           $results = $db->prepare($sql . " LIMIT ? OFFSET ?");
          $results->bindValue(1,"%".$search."%",PDO::PARAM_STR);
