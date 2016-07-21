@@ -62,7 +62,7 @@ function one_product_array($id) {
 }
 
 function get_item_html($item) {
-    $output = "<li>"
+    $output = "<li class='list-group-item'>"
         . $item["name"] . " $"
         . $item["price"] . "/" 
         . $item["unit"] . "</li>";

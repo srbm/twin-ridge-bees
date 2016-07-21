@@ -53,3 +53,7 @@ body > .container {
 code {
   font-size: 80%;
 }
+
+.list-group-item {
+	border: none;
+}

@@ -82,9 +82,9 @@ include ("inc/header.php");
 
 <div class="section catalog page">
 	
-	<div class="wrapper">
+	<div class="container">
         
-		<h1><?php 
+		<h2><?php 
         if ($search != null) {
           echo "Search Results for \"".htmlspecialchars($search)."\"";
         } else {
@@ -93,7 +93,7 @@ include ("inc/header.php");
           }
           echo $pageTitle;
         }
-        ?></h1>
+        ?></h2>
         <?php
         if ($total_items < 1) {
           echo "<p>No items were found matching that search term.</p>";
@@ -101,7 +101,7 @@ include ("inc/header.php");
             . "<a href=\"products.php\">Browse All Products</a></p>";
         } else {
           echo $pagination; ?>
-        <ul class="items">
+        <ul class="items list-group">
             <?php
             foreach ($product as $item) {
                 echo get_item_html($item);

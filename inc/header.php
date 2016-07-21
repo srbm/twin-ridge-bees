@@ -25,7 +25,7 @@
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li class=""><a href="/index.php">Home</a></li>
+            <li><a href="index.php">Home</a></li>
             <li><a href="about.php">About</a></li>
           </ul>
         </div><!--/.nav-collapse -->
@@ -34,20 +34,13 @@
 
 		</div>
 		
+	<!-- background banner image -->
 		<div class="wide">
 			<div class="col-xs-5 line"><hr></div>
 			<div class="col-xs-2 logo">Logo</div>
 			<div class="col-xs-5 line"><hr></div>
 		</div>
 
-	</div>
-	
-	  <div class="search">
-  <form method="get" action="products.php">
-    <label for="s">Search:</label>
-    <input type="text" name="s" id="s" />
-    <input type="submit" value="go" />  
-  </form>
-  </div>
+
 
 	<div id="content">
