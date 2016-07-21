@@ -44,22 +44,6 @@ function all_products_array() {
 	return $products;
 }
 
-function one_product_array($id) {
-	include("connection.php");
-	
-		try {
-		$results = $db->query(
-			"SELECT name, price, unit FROM Products
-			WHERE id = $id;"
-		);
-	} catch (Exception $e) {
-		echo "Data could not be retrieved from the database.";
-		exit;
-	}
-	
-	$products = $results->fetchAll();
-	return $products;
-}
 
 function get_item_html($item) {
     $output = "<li class='list-group-item'>"
@@ -67,20 +51,6 @@ function get_item_html($item) {
         . $item["price"] . "/" 
         . $item["unit"] . "</li>";
     return $output;
-}
-
-function get_products($product,$category) {
-	$output = array();
-    
-    foreach ($product as $id => $item) {
-        if ($category == null OR strtolower($category) == strtolower($item["category"])) {
-            $sort = $item["name"];
-            $output[$id] = $sort;            
-        }
-    }
-    
-    asort($output);
-    return array_keys($output);
 }
 
 function search_catalog_array($search, $limit = null, $offset = 0) {

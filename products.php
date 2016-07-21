@@ -96,7 +96,7 @@ include ("inc/header.php");
         ?></h2>
         <?php
         if ($total_items < 1) {
-          echo "<p>No items were found matching that search term.</p>";
+          echo "<p>Sorry but we don't currently offer ($search)</p>";
           echo "<p>Search Again or "
             . "<a href=\"products.php\">Browse All Products</a></p>";
         } else {
