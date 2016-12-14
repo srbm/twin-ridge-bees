@@ -28,11 +28,11 @@ if ($total_items >0 ) {
   if (!empty($section)) {
     $limit_results = "cat=" . $section . "&";
   }
-  
+
   // redirect too-large page numbers to the last page
   if ($current_page > $total_pages) {
-    header("location:products.php?" 
-           . $limit_results 
+    header("location:products.php?"
+           . $limit_results
            . "pg=".$total_pages);
   }
   // redirect too-small page numbers to the first page
@@ -45,13 +45,13 @@ if ($total_items >0 ) {
 
 //determine the offset (number of items to skip) for the current page
   //for example: on page 3 with 8 item per page, the offset would be 16
- /* 
+ /*
  *
  *
  $offset = ($current_page - 1) * $items_per_page;
 
   $pagination = "<div class=\"pagination\">";
-  $pagination .= "Pages: ";  
+  $pagination .= "Pages: ";
   for ($i = 1;$i <= $total_pages;$i++) {
     if ($i == $current_page) {
       $pagination .= " <span>$i</span>";
@@ -81,10 +81,10 @@ include ("inc/header.php");
 ?>
 
 <div class="section catalog page">
-	
+
 	<div class="container">
-        
-		<h2><?php 
+
+		<h2><?php
         if ($search != null) {
           echo "Search Results for \"".htmlspecialchars($search)."\"";
         } else {
@@ -96,11 +96,11 @@ include ("inc/header.php");
         ?></h2>
         <?php
         if ($total_items < 1) {
-          echo "<p>Sorry but we don't currently offer ($search)</p>";
+          echo "<p>No results found for ($search)</p>";
           echo "<p>Search Again or "
             . "<a href=\"products.php\">Browse All Products</a></p>";
         } else {
-          echo $pagination; ?>
+        //  echo $pagination; ?>
         <ul class="items list-group">
             <?php
             foreach ($product as $item) {
@@ -108,9 +108,9 @@ include ("inc/header.php");
             }
             ?>
         </ul>
-		<?php echo $pagination; 
+        <?php // echo $pagination;
         } ?>
-        
+
 	</div>
 </div>
 

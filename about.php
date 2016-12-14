@@ -3,18 +3,18 @@ $pageTitle = "About TRB";
 include ("inc/header.php"); ?>
 
 <div class="container">
-	<div class="jumbotron">
+	<!-- <div class="jumbotron">
 		<h1>Twin Ridge Bees</h1>
 		<h3>More than just honey.</h3>
-	</div>
+	</div> -->
 </div>
 
 <div class="container" >
-	
+
 	<p>
-		Twin Ridge Bees is a small family farm located at the foot hills of the Appalachia Mountains in Pain Lick, KY. 
+		Twin Ridge Bees is a small family farm located at the foot hills of the Appalachia Mountains in Pain Lick, KY.
 	</p>
-	<p>	
+	<p>
 		Although we specialize in raising bees for honey we also grow a variety of fresh vegetables.
 	</p>
 	<p>

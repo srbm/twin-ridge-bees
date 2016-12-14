@@ -1,24 +1,14 @@
 </div><!-- end content -->
 
-	<div class="footer">
 
-		<div class="wrapper">
+		<div class="container footer">
+			<nav class="row" role="navigation">
+        <div class="col-sm-4"><p>©2016 Twin Ridge Designs</p></div>
+        <div class="col-sm-4"><p><a target="_blank" href="https://www.facebook.com/TwinRidgeFarm/?fref=ts&amp;ref=br_tf">Facebook</a></p></div>
+        <div class="col-sm-4"><p>Content here</p></div>
+    </nav>
+		</div>
 
-			
-		</div>
-	
-	</div>
-	<footer class="footer">
-		<div class="container">
-			<div>
-				
-					<ul class="nav navbar" style=" margin-bottom: 0px;">		
-						<li><a href="https://www.facebook.com/TwinRidgeFarm/?fref=ts&amp;ref=br_tf">Facebook</a></li>
-						<li>©2016 Twin Ridge Designs</li>
-				
-			</div>
-		</div>
-  </footer>
 
 
     <!-- Bootstrap core JavaScript
@@ -29,5 +19,6 @@
     <script src="js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
+		<script src="CSS/main.css"></script>
 </body>
 </html>

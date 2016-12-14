@@ -9,38 +9,52 @@
 </head>
 <body>
 
-	<div class="header"> 
-		
+	<div class="header">
+
 		<!-- Fixed navbar -->
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
-        <div class="navbar-header">
+				<!-- Brand and toggle get grouped for mobile -->
+        <div class="navbar-header page-scroll">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.php">Twin Ridge Bees</a>
         </div>
+				<!-- Brand Logo -->
+				<a class="navbar-brand page-scroll" href="index.php">Twin Ridge Bees</a>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
             <li><a href="index.php">Home</a></li>
             <li><a href="about.php">About</a></li>
+						</ul>
+						<!-- Ky proud logo and link to kyproud.gov right side-->
+					<ul class = "nav navbar-nav navbar-right">
+						<li><a target="_blank" href="http://www.kyproud.com/"><img class="img-responsive" alt="Responsive image" src="images/kyProudLogo.png"></img></a></li>
           </ul>
         </div><!--/.nav-collapse -->
+
+
+
       </div>
     </nav>
 
 		</div>
-		
-	<!-- background banner image -->
-		<div class="wide">
-			<div class="col-xs-5 line"><hr></div>
-			<div class="col-xs-2 logo">Logo</div>
-			<div class="col-xs-5 line"><hr></div>
+
+	<!-- background banner image/video with text -->
+	<div class="header-container">
+		<div class="video-container">
+			<video autoplay loop muted poster="images/hives-along-treeline.jpg" id="background">
+		        <source src="images/bees-flying-video.mp4" type="video/mp4">
+		  </video>
 		</div>
+		<h1>Twin Ridge Bees</h1>
+		<h3>More than just honey.</h3>
+	</div>
 
 
 
-	<div id="content">
+
+	<div id="content"> <!--Begin main content-->
