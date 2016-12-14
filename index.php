@@ -7,6 +7,21 @@ $pageTitle = "TRB";
 include ("inc/header.php");
 ?>
 
+<!-- Farm Info and Introduciton  -->
+<section class="module content">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6">
+				<img class="smiling img-responsive" alt="Brian Tyler and Katie Farthing smiling in front of a barn" src="images/farthings-smiling.jpg">
+			</div>
+			<div class="col-sm-6">
+				<h2>Meet your Farmers</h2>
+				<p>All Farthings have a big hand in running things on the ridge. Brian got things going with his bees and recently built a pig pen. Katie spends her time in the garden and preserves whats left over. And Tyler jump started raising the farms cattle.</p>
+			</div>
+		</div>
+	</div>
+</section>
+
 
 
 	<!-- Search  -->

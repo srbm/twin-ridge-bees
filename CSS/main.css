@@ -6,6 +6,14 @@
   background-size:100%;
   background-repeat: no-repeat;
 }*/
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.ky-proud li {
+  padding-right: 10px;
+}
 
 .image-header {
   margin-top: 51px; //push below navigation
@@ -31,10 +39,11 @@
 }
 
 video {
-  position: absolute;
-  z-index: -1;
+  position: fixed;
+  top: 0;
+  z-index: -100;
   opacity: 0.77;
-  width: 100%;
+  min-width: 100%;
 }
 
 h1 {
@@ -66,8 +75,72 @@ align-items: right;
   width: 70px;
 }
 
-/* Sticky footer styles
--------------------------------------------------- */
+/* ---------------------index.php  ----------------------------- */
+/* ---------------------Farthings Smiling Row ----------------------------- */
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+.smiling {
+  width: 100%;
+  /*position: absolute;*/
+  /*overflow: hidden;*/
+}
+.row {
+    background-color: #e93f00;
+}
+.col-sm-6 h2,
+.col-sm-6 p {
+  /*position: absolute;*/
+  text-align: center;
+}
+
+/* ---------------------sections  ----------------------------- */
+
+section.module:last-child {
+  margin-bottom: 0;
+}
+section.module h2 {
+  margin-bottom: 40px;
+  font-family: none;
+  font-size: 30px;
+}
+section.module p {
+  margin-bottom: 40px
+    font-size 20px;
+    font-weight: 300;
+}
+section.module p:last-child {
+  margin-bottom: 0;
+}
+section.module.parallax {
+  height: 600px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+section.module.parallax h1 {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 25%;
+  border: 3px solid;
+  padding: 10px;
+  border-radius: 15px;
+  width: 50%;
+  letter-spacing: 3px;
+  font-size: 25px;
+}
+
+/* Sticky footer styles -------------------------------------------------- */
 html {
   position: relative;
   min-height: 100%;
