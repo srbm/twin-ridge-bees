@@ -3,9 +3,14 @@
 
 		<div class="container footer">
 			<nav class="row" role="navigation">
-        <div class="col-sm-4"><p>©2016 Twin Ridge Designs</p></div>
-        <div class="col-sm-4"><p><a target="_blank" href="https://www.facebook.com/TwinRidgeFarm/?fref=ts&amp;ref=br_tf">Facebook</a></p></div>
-        <div class="col-sm-4"><p>Content here</p></div>
+        <div class="col-sm-6">
+        	<p>Check out our <a target="_blank" href="https://www.facebook.com/TwinRidgeFarm/?fref=ts&amp;ref=br_tf">Facebook</a> page!</p>
+					<p>©2016 Twin Ridge Designs</p>
+				</div>
+        <div class="col-sm-6"><p>
+					Located in the foothills of appalachia<br>
+					near Lancaster, Kentucky<br>
+					Go Cats! (Right Tyler?)</p></div>
     </nav>
 		</div>
 

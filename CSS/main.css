@@ -1,14 +1,7 @@
-/*HEADER FULL WIDTH BACKGROUND IMAGE*/
 
-/*.wide {
-  height: 100%;
-  background-image:url('../images/tr-banner.jpg');
-  background-size:100%;
-  background-repeat: no-repeat;
-}*/
 .container {
   max-width: 100%;
-  margin: 0 auto;
+  /*margin: 0 auto;*/
 }
 
 .ky-proud li {
@@ -41,24 +34,11 @@
 video {
   position: fixed;
   top: 0;
-  z-index: -100;
+  z-index: -1;
   opacity: 0.77;
   min-width: 100%;
 }
 
-h1 {
-  z-index: 1;
-  text-align: center;
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: 25%;
-  border: 3px solid;
-  padding: 10px;
-  border-radius: 15px;
-  width: 50%;
-  letter-spacing: 3px;
-  font-size: 25px;
-}
 
 h3 {
   z-index: 1;
@@ -70,6 +50,11 @@ h3 {
 
 }
 
+.navbar-brand {
+  margin: 0;
+  padding: 15px !important;
+}
+
 .navbar-nav img {
 align-items: right;
   width: 70px;
@@ -79,16 +64,15 @@ align-items: right;
 /* ---------------------Farthings Smiling Row ----------------------------- */
 .container {
   width: 100%;
-  margin: 0 auto;
+  /*margin: 0 auto;*/
   padding: 0;
 }
-.smiling {
-  width: 100%;
-  /*position: absolute;*/
-  /*overflow: hidden;*/
-}
 .row {
-    background-color: #e93f00;
+    /*background-color: #f8f;*/
+    margin: 0 auto;
+}
+.col-sm-6 {
+  padding: 0;
 }
 .col-sm-6 h2,
 .col-sm-6 p {
@@ -96,15 +80,25 @@ align-items: right;
   text-align: center;
 }
 
-/* ---------------------sections  ----------------------------- */
+/* ---------------------sections for parallax scrolling  ----------------------------- */
 
 section.module:last-child {
   margin-bottom: 0;
 }
+section.module.content {
+  background-color: #126BBF;
+  -webkit-box-shadow: 0px 0px 6px 2px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0px 0px 6px 2px rgba(0,0,0,0.5);
+  box-shadow: 0px 0px 6px 2px rgba(0,0,0,0.5);
+}
 section.module h2 {
-  margin-bottom: 40px;
-  font-family: none;
+  color: #ffffff;
+  font-family: 'Raleway',sans-serif;
   font-size: 30px;
+  font-weight: 800;
+  line-height: 36px;
+  margin: 75 40 75 40;
+  text-align: center;
 }
 section.module p {
   margin-bottom: 40px
@@ -121,6 +115,9 @@ section.module.parallax {
   background-attachment: fixed;
   background-size: cover;
 }
+/*section.module.content {
+  height: 600px;
+}*/
 section.module.parallax h1 {
   color: rgba(255, 255, 255, 0.8);
   font-size: 48px;
@@ -137,7 +134,73 @@ section.module.parallax h1 {
   border-radius: 15px;
   width: 50%;
   letter-spacing: 3px;
+  font-size: 40px;
+}
+section.module.parallax h3 {
+  color: rgba(255, 255, 255, 0.8);
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  font-size: 20px;
+}
+
+section.module.parallax-2 {
+  background-image: url("../images/treeline-sunset.jpg");
+  width: 100%;
+}
+section.module.parallax-3 {
+  background-image: url("../images/hives-along-treeline.jpg");
+  width: 100%;
+}
+section.module.parallax-4 {
+  background-image: url("../images/stack-of-honey-jars.jpg");
+  width: 100%;
+}
+/* --------------------- Image formatting within sections ----------------------------- */
+.pigs {
+  width: 100%;
+  height: 400px;
+}
+.bees {
+  width: 100%;
+}
+
+/* --------------------- Text formatting within sections ----------------------------- */
+
+section.module p {
+  color: #f8f8f8;
+  font-family: 'Raleway',sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 32px;
+  margin: 75 40 75 40;}
+
+/* ---------------------search  ----------------------------- */
+div.search h2 {
+  color: #ffffff;
+  font-family: 'Raleway',sans-serif;
   font-size: 25px;
+  font-weight: 800;
+  line-height: 30px;
+  margin: 40 50 5 50;
+  text-align: center;
+}
+div.search p {
+  color: #f8f8f8;
+  font-family: 'Raleway',sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 32px;
+  margin: 20 50 25 50;
+}
+div.search a {
+  color: #f8f8f8;
+  font-family: 'Raleway',sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 32px;
+  text-decoration: underline;
+}
+.search-box {
+  padding: 10%;
 }
 
 /* Sticky footer styles -------------------------------------------------- */
@@ -154,20 +217,43 @@ body {
   bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
-  /*height: 60px;*/
-  background-color: #4C6B7F;
+  height: 100px;
+  background-color: #191919;
   margin-top: 15px;
+  padding-top: 15px;
 }
-
+.footer p {
+  vertical-align: middle;
+}
+.search-list {
+  margin-top: -120px;
+}
+.list-group-item {
+	border: none;
+  text-align: center;
+}
+.list-group-item:last-child {
+  margin-bottom: 50px;
+}
+.col-sm-6 h2 {
+  margin-top: -30px;
+  color: white;
+}
+.col-sm-6 ul {
+  -webkit-box-shadow: 0px 0px 8px 3px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 8px 3px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 8px 3px rgba(0,0,0,0.75);
+  margin-bottom: 25px;
+}
 
 /* Custom page CSS
 -------------------------------------------------- */
 /* Not required for template or sticky footer method. */
 
-body > .container {
+/*body > .container {
   padding: 10px 15px 0;
 }
-.container .text-muted {
+.text-muted {
   margin: 10px 0;
 }
 
@@ -178,8 +264,4 @@ body > .container {
 
 code {
   font-size: 80%;
-}
-
-.list-group-item {
-	border: none;
-}
+}*/

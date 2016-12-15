@@ -27,8 +27,8 @@
 				<a class="navbar-brand page-scroll" href="index.php">Twin Ridge Bees</a>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li><a href="index.php">Home</a></li>
-            <li><a href="about.php">About</a></li>
+            <!-- <li><a href="index.php">Home</a></li>
+            <li><a href="about.php">About</a></li> -->
 						</ul>
 						<!-- Ky proud logo and link to kyproud.gov right side-->
 					<ul class = "nav navbar-nav navbar-right ky-proud">
@@ -52,7 +52,7 @@
 			  </video>
 			</div>
 			<h1>Twin Ridge Bees</h1>
-			<h3>More than just honey.</h3>
+			<h3>More than just honey</h3>
 		</div>
 	</section>
 

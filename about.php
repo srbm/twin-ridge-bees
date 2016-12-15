@@ -1,12 +1,12 @@
-<?php
+<!-- <?php
 $pageTitle = "About TRB";
 include ("inc/header.php"); ?>
 
 <div class="container">
-	<!-- <div class="jumbotron">
+	<div class="jumbotron">
 		<h1>Twin Ridge Bees</h1>
 		<h3>More than just honey.</h3>
-	</div> -->
+	</div>
 </div>
 
 <div class="container" >
@@ -27,4 +27,4 @@ include ("inc/header.php"); ?>
 
 
 
-<?php include ("inc/footer.php"); ?>
+<?php include ("inc/footer.php"); ?> -->

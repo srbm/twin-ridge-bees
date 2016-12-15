@@ -2,7 +2,7 @@
 include ("inc/functions.php");
 $products = all_products_array();
 
-$pageTitle = "TRB Products";
+$pageTitle = "TRF";
 $section = null;
 $search = null;
 $items_per_page = 8;
@@ -83,17 +83,18 @@ include ("inc/header.php");
 <div class="section catalog page">
 
 	<div class="container">
-
-		<h2><?php
-        if ($search != null) {
-          echo "Search Results for \"".htmlspecialchars($search)."\"";
-        } else {
-          if ($section != null) {
-            echo "<a href='products.php'>All Products</a> &gt; ";
+    <div class="row">
+      <div class="col-sm-6 col-sm-offset-3 search-list">
+		    <h2><?php
+          if ($search != null) {
+            echo "Search Results for \"".htmlspecialchars($search)."\"";
+          } else {
+            if ($section != null) {
+              echo "<a href='products.php'>All Products</a> &gt; ";
+            }
+            echo "Sold at Lancaster Farmers' Market";
           }
-          echo $pageTitle;
-        }
-        ?></h2>
+          ?></h2>
         <?php
         if ($total_items < 1) {
           echo "<p>No results found for ($search)</p>";
@@ -101,15 +102,19 @@ include ("inc/header.php");
             . "<a href=\"products.php\">Browse All Products</a></p>";
         } else {
         //  echo $pagination; ?>
-        <ul class="items list-group">
-            <?php
-            foreach ($product as $item) {
-                echo get_item_html($item);
-            }
-            ?>
-        </ul>
+
+          <ul class="items list-group">
+              <?php
+              foreach ($product as $item) {
+                  echo get_item_html($item);
+               }
+               echo "<li class=\"list-group-item\">*Prices subject to change*</li>";
+              ?>
+          </ul>
+        </div>
         <?php // echo $pagination;
         } ?>
+      </div>
 
 	</div>
 </div>
